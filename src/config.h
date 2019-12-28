@@ -5,7 +5,7 @@
 #include <glib.h>
 
 #ifndef CONFIG_FILE
-#define CONFIG_FILE "/etc/lightdm/lightdm-minigreeter.conf"
+#define CONFIG_FILE "/etc/lightdm/lightdm-mini-greeter.conf"
 #endif
 
 
@@ -33,6 +33,8 @@ typedef struct Config_ {
     // Password Input
     GdkRGBA  *password_color;
     GdkRGBA  *password_background_color;
+    GdkRGBA  *password_border_color;
+    gchar    *password_border_width;
 
     /* Hotkeys */
     guint     mod_bit;
